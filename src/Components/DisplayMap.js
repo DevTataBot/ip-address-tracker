@@ -7,21 +7,21 @@ import {AppContext} from '../context/AppContext'
 
 const markerPosition = new L.Icon({
     iconUrl: (iconPosition),
-    iconSize: [40, 40],
-    iconAnchor: [17, 45],
-    popupAnchor: [0 -46]
+    iconSize: [55, 55],
+    iconAnchor: [20, 20],
+    popupAnchor: [10,10]
 })
 
-const MyView = ({ center }) => {
+const MyView = ({ center}) => {
     const map = useMap()
-    map.setView(center)
+    map.setView(center,13)
     return null
 }
 
 const DisplayMap = () => {    
     const { trackerInfo } = useContext(AppContext)
     return(
-        <MapContainer className="Container-map" zoomControl={false} center={trackerInfo.location} zoom={13} scrollWheelZoom={true}>
+        <MapContainer  className="Container-map" zoomControl={true} center={trackerInfo.location} zoom={13} scrollWheelZoom={true}>
             <MyView center={trackerInfo.location} />
             <TileLayer
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -29,10 +29,11 @@ const DisplayMap = () => {
             />
             <Marker position={trackerInfo.location} icon={markerPosition}>
                 <Popup>
-                    <p>You´re here</p>  
+                    You´re here 
                 </Popup>
             </Marker>
         </MapContainer>
+   
     )
 }
 

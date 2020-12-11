@@ -17,7 +17,7 @@ export const  AppContextProvider  = (props) => {
     
     const getUserIp = async () => {
 
-        const response = await fetch('https://geo.ipify.org/api/v1?apiKey=at_h7OWP0HYzS8cGNF0ZjGT9ivOr55UZ&ipAddress=8.8.8.8')
+        const response = await fetch('https://geo.ipify.org/api/v1?apiKey=at_h7OWP0HYzS8cGNF0ZjGT9ivOr55UZ')
 
         if(response.ok){
             const responseJson = await response.json()
