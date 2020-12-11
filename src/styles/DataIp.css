@@ -1,0 +1,35 @@
+.Container{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: calc(50% - 190px);
+}
+.Container__Data{
+    position: relative;
+    display: grid;
+    margin: 0 auto;
+    padding:30px;
+    width: 75%;
+    height: 100%;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    box-shadow: 1px 2px 20px #000;
+    border-radius: 20px;
+    background-color: white;
+}
+.Container__Data h3{
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #a5a5a5;
+    font-weight: 500;
+}
+.Container__Data p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.Container__Data div{
+    padding-left: 15px;
+}
+.Container__Data .border-right{
+    border-right: 1px solid #bbbbbb;
+}

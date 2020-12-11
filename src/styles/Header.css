@@ -1,0 +1,38 @@
+.Header{
+    background-image: url('../images/pattern-bg.png');
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+    padding-bottom: 50px;
+}
+
+.Header__title{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.Header__search{
+    display: grid;
+    width: 40%;
+    grid-template-columns: 90% 10%;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Header__search-input{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.Header__search-btn{
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: black
+    ;
+}
