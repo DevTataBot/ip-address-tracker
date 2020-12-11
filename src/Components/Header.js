@@ -15,7 +15,7 @@ const Header = () => {
         <header className="Header">
             <h1 className="Header__title">IP Addres Tracker</h1>
             <div className="Header__search">
-                <input className="Header__search-input" type="texto" 
+                <input className="Header__search-input" type="text" 
                 placeholder="Search for any IP addres or domain"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}/>
