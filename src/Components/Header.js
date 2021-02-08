@@ -15,7 +15,6 @@ const Header = () => {
         <header className="Header">
             <h1 className="Header__title">IP Addres Tracker</h1>
             <div className="Header__search">
-                <label for="ipsearch"></label>
                 <input id="ipsearch" className="Header__search-input" type="text" 
                 placeholder="Search for any IP addres or domain"
                 value={inputValue}
