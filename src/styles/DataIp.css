@@ -34,3 +34,25 @@
 .Container__Data .border-right{
     border-right: 1px solid #bbbbbb;
 }
+
+@media screen and (max-width: 740px){
+    .Container{
+        height: auto;
+        top: calc(50% - 170px);
+    }
+    .Container__Data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+    }
+    .Container__Data .border-right{
+        border-right: none;
+    }
+    .Container__Data p{
+        text-align: center;
+    }
+    .Container__Data div{
+        text-align: center;
+    }
+}
